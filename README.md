@@ -111,6 +111,29 @@ npm install
 npm run dev
 ```
 
+## Env Variables
+
+To run the app locally, create config.env file in (/config) folder, then add the following
+
+```
+NODE_ENV = development | production
+PORT = <PORT>
+MONGO_URI=<YOUR_MONGODB_URI>
+JWT_SECRET=<JWT_SECRET>
+JWT_EXPIRE=<JWT_EXPIRE_TIME>
+JWT_COOKIE_EXPIRE=<JWT_COOKIE_EXPIRE_TIME>
+GEOCODER_PROVIDER=<GEOCODER_PROVIDER>
+GEOCODER_API_KEY=<GEOCODER_API_KEY>
+FILE_UPLOAD_PATH=/uploads
+
+SMTP_HOST=<SMTP_HOST>
+SMTP_PORT=<2525>
+SMTP_EMAIL=<SMTP_EMAIL>
+SMTP_PASSWORD=<SMTP_PASSWORD>
+FROM_EMAIL=<FROM_EMAIL>
+FROM_NAME=<FROM_NAME>
+```
+
 [//]: # "These are reference links used in the body of this note and get stripped out when the markdown processor does its job. There is no need to format nicely because it shouldn't be seen. Thanks SO - http://stackoverflow.com/questions/4823468/store-comments-in-markdown-syntax"
 [node.js]: http://nodejs.org
 [express]: http://expressjs.com
